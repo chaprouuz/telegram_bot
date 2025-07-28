@@ -1,10 +1,9 @@
 import os
-
-TOKEN = os.getenv('TOKEN')
-
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 from datetime import datetime, time
+
+TOKEN = os.getenv('TOKEN')
 
 # پیام پاسخ خودکار
 OFF_HOURS_MESSAGE = """📌 کاربر گرامی، وقت شما بخیر  
